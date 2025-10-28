@@ -3,10 +3,10 @@ name: Pipeline de Receitas Python
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -28,7 +28,7 @@ jobs:
           pip install pytest flake8
 
       - name: Rodar testes
-        run: receita.py
+        run: python receita.py
 
       - name: Verificar estilo do código (flake8)
         run: flake8 .
