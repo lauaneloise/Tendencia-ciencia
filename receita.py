@@ -29,7 +29,7 @@ def buscar_receita():
         print("Receita não encontrada.\n")
 
 def menu():
-    input = "bolo"
+    input = 2
     while True:
         print("=== Menu de Receitas ===")
         print("1. Adicionar receita")
